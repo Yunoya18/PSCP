@@ -33,9 +33,9 @@ def main():
                 print("Set %d: A (%d) | B (%d)" % (set_a + set_b + 1, score_a, score_b))
                 set_b += 1
                 score_a, score_b = 0, 0
-    if set_a == 3 or (set_a - set_b == 2 and set_a >= 2 and set_b >= 2):
+    if set_a == 3:
         print("A won %d:%d set" % (set_a, set_b))
-    elif set_b == 3 or (set_b - set_a == 2 and set_a >= 2 and set_b >= 2):
+    elif set_b == 3:
         print("B won %d:%d set" % (set_b, set_a))
     else:
         print("Set %d: A (%d) | B (%d)" % (set_a + set_b + 1, score_a, score_b))
